@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <p>Panel-<span>X</span></p>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/slider1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slider2.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section id="about_us">
+            <div class="about_container">
+                <div class="left"  data-aos="fade-right" data-aos-duration="1200">
+                    <img src="images/about_us.jpg" alt="">
+                </div>
+
+                <div class="right">
+                    <small>About Us</small>
+                    <h1>Lorem Ispum</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto ex provident ipsa, illo
+                        illum fugit voluptates cupiditate cum ducimus nulla facere harum voluptatum, vitae beatae
+                        aspernatur repellendus ratione consequatur.</p>
+                </div>
+            </div>
+        </section>
+        <section id="service">
+            <div class="service_container">
+                <h1>Why shop with us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consectetur optio iure explicabo?
+                    Voluptatum voluptate debitis qui necessitatibus cupiditate temporibus quisquam blanditiis quibusdam
+                    aspernatur esse quod expedita, voluptas ipsa perspiciatis.</p>
+                <div class="service_cards">
+                    <div class="card"  data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-regular fa-truck"></i>
+                        <h2>Fast Delivery</h2>
+                        <p>Free shipping to all townships</p>
+
+                    </div>
+
+                    <div class="card"  data-aos="fade-up" data-aos-delay="500">
+                        <i class="fa-solid fa-shield"></i>
+                        <h2>Secure Payment</h2>
+                        <p>Your payment is safe with our enctyped system.</p>
+
+                    </div>
+
+                    <div class="card"  data-aos="fade-up" data-aos-delay="900">
+                        <i class="fa-solid fa-headset"></i>
+                        <h2>24/7 Support</h2>
+                        <p>Our dedicated teams is here to help you anytime</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+                <p>&copy;My website.All right reserve.</p>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            effect: BarProp,
+            autoplay: {
+                delay: 3000,
+            },  
+            speed: 2000,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+
+        });
+    </script>
+    <script>
+  AOS.init({
+    delay: 0, 
+  duration: 400,
+  });
+</script>
+
+
+</body>
+
+</html>
